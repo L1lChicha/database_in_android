@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Phone data base</string>
+    <string name="clearAll">Clear all data</string>
+    <string name="napis">napi</string>
+    <string name="manufacturer">Manufacturer</string>
+    <string name="model" >Model</string>
+    <string name="androidVersion" > Android version</string>
+    <string name="site">Web site</string>
+
+
+</resources>

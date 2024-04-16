@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Phone data base" />
+
+    <TableRow
+        android:id="@+id/row_manufacturer"
+        android:layout_width="wrap_content"
+        android:paddingRight="20dp"
+        android:layout_height="400dp">
+
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/manufacturer"
+            android:layout_marginLeft="10dp"
+
+            />
+
+        <EditText
+            android:id="@+id/manufacturer_EditText"
+
+            android:layout_width="272dp"
+            android:layout_marginLeft="0dp"
+            android:hint="enter manufacturer"
+            android:maxLines="1"
+            android:singleLine="true">
+
+
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_model"
+        android:layout_width="239dp"
+        android:paddingRight="20dp"
+
+        android:layout_height="400dp">
+
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/model"
+            android:layout_marginLeft="10dp"
+
+            />
+
+        <EditText
+            android:id="@+id/model_editText"
+            android:layout_width="295dp"
+            android:hint="enter model"
+            android:maxLines="1"
+            android:singleLine="true"></EditText>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_androidVersion"
+        android:layout_width="239dp"
+        android:paddingRight="20dp"
+
+        android:layout_height="400dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/androidVersion"
+
+            />
+
+        <EditText
+            android:id="@+id/androidVersion_editText"
+            android:layout_width="295dp"
+            android:hint="enter version number"
+            android:maxLines="1"
+            android:singleLine="true"></EditText>
+    </TableRow>
+
+
+
+    <TableRow
+        android:id="@+id/row_site"
+        android:layout_width="match_parent"
+        android:paddingRight="20dp"
+
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/site"
+
+            />
+
+        <EditText
+            android:id="@+id/site_editText"
+            android:layout_width="10dp"
+            android:hint="enter web site"
+            android:maxLines="1"
+            android:singleLine="true"></EditText>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:singleLine="true"
+            android:id="@+id/site_button"
+            android:layout_width="0dp"
+            android:text="Web site"
+            android:layout_weight="0"
+            />
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:text="Cancel"
+            android:layout_weight="1"
+            />
+        <Button
+        android:id="@+id/save_button"
+        android:layout_width="0dp"
+        android:text="Save"
+        android:layout_weight="2"
+        />
+
+
+    </TableRow>
+
+
+
+
+
+
+</TableLayout>
